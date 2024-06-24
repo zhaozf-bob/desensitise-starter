@@ -5,6 +5,7 @@ import java.util.List;
 /**
  * 脱敏服务实现类
  */
+@FunctionalInterface
 public interface IDesensitiseService {
 
     /**
@@ -14,7 +15,5 @@ public interface IDesensitiseService {
      * @param obj
      * @return
      */
-    default Object desensitise(List<String> keys, Object obj) {
-        return null;
-    };
+    Object desensitise(List<String> keys, Object obj);
 }
